@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from attacks.abstract_attack import AbstractAttack
+from rsactftool.attacks.abstract_attack import AbstractAttack
 import subprocess
-from lib.crypto_wrapper import RSA
-from lib.keys_wrapper import PrivateKey
-from lib.utils import rootpath
+from rsactftool.lib.crypto_wrapper import RSA
+from rsactftool.lib.keys_wrapper import PrivateKey
+from rsactftool.lib.utils import rootpath
 
 
 class Attack(AbstractAttack):
@@ -50,7 +50,7 @@ class Attack(AbstractAttack):
         return (None, None)
 
     def test(self):
-        from lib.keys_wrapper import PublicKey
+        from rsactftool.lib.keys_wrapper import PublicKey
 
         key_data = """-----BEGIN PUBLIC KEY-----
 MIIEIjANBgkqhkiG9w0BAQEFAAOCBA8AMIIECgKCAgEDMXAsX+AfJAHJ5E7Aunnk

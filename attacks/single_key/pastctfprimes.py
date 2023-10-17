@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from attacks.abstract_attack import AbstractAttack
+from rsactftool.attacks.abstract_attack import AbstractAttack
 from tqdm import tqdm
-from lib.keys_wrapper import PrivateKey
-from lib.number_theory import is_divisible
+from rsactftool.lib.keys_wrapper import PrivateKey
+from rsactftool.lib.number_theory import is_divisible
 import glob
 
 
@@ -32,7 +32,7 @@ class Attack(AbstractAttack):
         return None, None
 
     def test(self):
-        from lib.keys_wrapper import PublicKey
+        from rsactftool.lib.keys_wrapper import PublicKey
 
         key_data = """-----BEGIN PUBLIC KEY-----
 MIIBfjANBgkqhkiG9w0BAQEFAAOCAWsAMIIBZgKCAV0BAAAAAAAAAAAAAAAAAAAA

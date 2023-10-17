@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from lib.number_theory import introot, chinese_remainder
-from attacks.abstract_attack import AbstractAttack
+from rsactftool.lib.number_theory import introot, chinese_remainder
+from rsactftool.attacks.abstract_attack import AbstractAttack
 from collections import defaultdict
 
 
@@ -44,7 +44,7 @@ class Attack(AbstractAttack):
         return None, None
 
     def test(self):
-        from lib.keys_wrapper import PublicKey
+        from rsactftool.lib.keys_wrapper import PublicKey
 
         # From PICO CTF Level 3 Crypto
         keys = [

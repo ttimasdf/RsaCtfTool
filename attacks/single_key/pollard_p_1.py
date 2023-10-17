@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from attacks.abstract_attack import AbstractAttack
+from rsactftool.attacks.abstract_attack import AbstractAttack
 from tqdm import tqdm
-from lib.keys_wrapper import PrivateKey
-from lib.number_theory import log, gcd, isqrt, primes, powmod
+from rsactftool.lib.keys_wrapper import PrivateKey
+from rsactftool.lib.number_theory import log, gcd, isqrt, primes, powmod
 
 
 def pollard_P_1(n, progress=True):
@@ -54,7 +54,7 @@ class Attack(AbstractAttack):
         return None, None
 
     def test(self):
-        from lib.keys_wrapper import PublicKey
+        from rsactftool.lib.keys_wrapper import PublicKey
 
         key_data = """-----BEGIN PUBLIC KEY-----
 MBswDQYJKoZIhvcNAQEBBQADCgAwBwICCg0CAQc=

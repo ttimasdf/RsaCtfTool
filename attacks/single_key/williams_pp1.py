@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 
 
-from attacks.abstract_attack import AbstractAttack
-from lib.keys_wrapper import PrivateKey
-from lib.number_theory import gcd, ilogb, isqrt, next_prime, mlucas
+from rsactftool.attacks.abstract_attack import AbstractAttack
+from rsactftool.lib.keys_wrapper import PrivateKey
+from rsactftool.lib.number_theory import gcd, ilogb, isqrt, next_prime, mlucas
 from itertools import count
 
 
@@ -63,7 +63,7 @@ class Attack(AbstractAttack):
         return None, None
 
     def test(self):
-        from lib.keys_wrapper import PublicKey
+        from rsactftool.lib.keys_wrapper import PublicKey
 
         key_data = """-----BEGIN PUBLIC KEY-----
 MCowDQYJKoZIhvcNAQEBBQADGQAwFgIPPNmaqiPnbwxXooFxLcTXAgMBAAE=

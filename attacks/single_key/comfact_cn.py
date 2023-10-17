@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from attacks.abstract_attack import AbstractAttack
-from lib.number_theory import gcd
-from lib.utils import s2n
-from lib.keys_wrapper import PrivateKey
+from rsactftool.attacks.abstract_attack import AbstractAttack
+from rsactftool.lib.number_theory import gcd
+from rsactftool.lib.utils import s2n
+from rsactftool.lib.keys_wrapper import PrivateKey
 
 
 class Attack(AbstractAttack):

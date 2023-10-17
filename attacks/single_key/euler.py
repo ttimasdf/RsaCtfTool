@@ -1,9 +1,9 @@
 # /usr/bin/env python
 # code taken from https://maths.dk/teaching/courses/math357-spring2016/projects/factorization.pdf
 
-from attacks.abstract_attack import AbstractAttack
-from lib.keys_wrapper import PrivateKey
-from lib.number_theory import gcd, isqrt_rem, isqrt, is_congruent
+from rsactftool.attacks.abstract_attack import AbstractAttack
+from rsactftool.lib.keys_wrapper import PrivateKey
+from rsactftool.lib.number_theory import gcd, isqrt_rem, isqrt, is_congruent
 import logging
 
 
@@ -83,7 +83,7 @@ class Attack(AbstractAttack):
         return None, None
 
     def test(self):
-        from lib.keys_wrapper import PublicKey
+        from rsactftool.lib.keys_wrapper import PublicKey
 
         key_data = """-----BEGIN PUBLIC KEY-----
 MCIwDQYJKoZIhvcNAQEBBQADEQAwDgIHEAABggAEpQIDAQAB

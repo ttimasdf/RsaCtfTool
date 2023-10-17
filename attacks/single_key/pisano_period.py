@@ -8,9 +8,9 @@ White paper: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8901977
 import random
 import time
 from tqdm import tqdm
-from lib.keys_wrapper import PrivateKey
-from attacks.abstract_attack import AbstractAttack
-from lib.number_theory import (
+from rsactftool.lib.keys_wrapper import PrivateKey
+from rsactftool.attacks.abstract_attack import AbstractAttack
+from rsactftool.lib.number_theory import (
     powmod,
     mod,
     ilog10,
@@ -131,7 +131,7 @@ class Attack(AbstractAttack):
         return None, None
 
     def test(self):
-        from lib.keys_wrapper import PublicKey
+        from rsactftool.lib.keys_wrapper import PublicKey
 
         key_data = """-----BEGIN PUBLIC KEY-----
 MCQwDQYJKoZIhvcNAQEBBQADEwAwEAIJVqCE2raBvB+lAgMBAAE=

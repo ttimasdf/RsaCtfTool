@@ -3,8 +3,8 @@
 
 import json
 import os
-from attacks.abstract_attack import AbstractAttack
-from lib.keys_wrapper import PrivateKey
+from rsactftool.attacks.abstract_attack import AbstractAttack
+from rsactftool.lib.keys_wrapper import PrivateKey
 
 
 class Attack(AbstractAttack):

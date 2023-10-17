@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from attacks.abstract_attack import AbstractAttack
-from lib.keys_wrapper import PrivateKey
-from lib.number_theory import isqrt, isqrt_rem
+from rsactftool.attacks.abstract_attack import AbstractAttack
+from rsactftool.lib.keys_wrapper import PrivateKey
+from rsactftool.lib.number_theory import isqrt, isqrt_rem
 
 
 def factor_2PN(N, P=3):
@@ -85,7 +85,7 @@ class Attack(AbstractAttack):
         return None, None
 
     def test(self):
-        from lib.keys_wrapper import PublicKey
+        from rsactftool.lib.keys_wrapper import PublicKey
 
         key_data = """-----BEGIN PUBLIC KEY-----
 MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQQBZxdhmWmnALU8TFXFgAAAAAAA

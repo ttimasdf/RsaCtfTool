@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 
 import sys
-from attacks.abstract_attack import AbstractAttack
+from rsactftool.attacks.abstract_attack import AbstractAttack
 from tqdm import tqdm
-from lib.keys_wrapper import PrivateKey
-from lib.number_theory import (
+from rsactftool.lib.keys_wrapper import PrivateKey
+from rsactftool.lib.number_theory import (
     isqrt,
     trivial_factorization_with_n_phi,
     rational_to_contfrac,
@@ -59,7 +59,7 @@ class Attack(AbstractAttack):
         return None, None
 
     def test(self):
-        from lib.keys_wrapper import PublicKey
+        from rsactftool.lib.keys_wrapper import PublicKey
 
         key_data = """-----BEGIN PUBLIC KEY-----
 MIIEIjANBgkqhkiG9w0BAQEFAAOCBA8AMIIECgKCAgEDMXAsX+AfJAHJ5E7Aunnk

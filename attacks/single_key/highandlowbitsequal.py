@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from attacks.abstract_attack import AbstractAttack
-from lib.keys_wrapper import PrivateKey
-from lib.number_theory import isqrt, is_square, invert, inv_mod_pow_of_2
+from rsactftool.attacks.abstract_attack import AbstractAttack
+from rsactftool.lib.keys_wrapper import PrivateKey
+from rsactftool.lib.number_theory import isqrt, is_square, invert, inv_mod_pow_of_2
 
 
 def InverseInverseSqrt2exp(n, k):
@@ -72,7 +72,7 @@ class Attack(AbstractAttack):
         return None, None
 
     def test(self):
-        from lib.keys_wrapper import PublicKey
+        from rsactftool.lib.keys_wrapper import PublicKey
 
         key_data = """-----BEGIN PUBLIC KEY-----
 MDwwDQYJKoZIhvcNAQEBBQADKwAwKAIhAKGAooBwksZWSiOH7YSe+0guURdBfMxcOdTR3r4EsjjRAgMBAAE=

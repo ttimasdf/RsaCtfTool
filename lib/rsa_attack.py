@@ -4,13 +4,13 @@
 import time
 import logging
 import importlib
-from lib.keys_wrapper import PublicKey, PrivateKey
-from lib.exceptions import FactorizationError
-from lib.utils import print_results
-from lib.fdb import send2fdb
-from lib.crypto_wrapper import bytes_to_long, long_to_bytes
+from rsactftool.lib.keys_wrapper import PublicKey, PrivateKey
+from rsactftool.lib.exceptions import FactorizationError
+from rsactftool.lib.utils import print_results
+from rsactftool.lib.fdb import send2fdb
+from rsactftool.lib.crypto_wrapper import bytes_to_long, long_to_bytes
 import inspect
-from lib.number_theory import is_prime, isqrt, gcd
+from rsactftool.lib.number_theory import is_prime, isqrt, gcd
 import traceback
 
 

@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from attacks.abstract_attack import AbstractAttack
+from rsactftool.attacks.abstract_attack import AbstractAttack
 import subprocess
 import os
-from lib.utils import rootpath, TimeoutError, terminate_proc_tree
-from lib.number_theory import invert, powmod
+from rsactftool.lib.utils import rootpath, TimeoutError, terminate_proc_tree
+from rsactftool.lib.number_theory import invert, powmod
 
 
 class Attack(AbstractAttack):
@@ -65,7 +65,7 @@ class Attack(AbstractAttack):
         return (None, None)
 
     def test(self):
-        from lib.keys_wrapper import PublicKey
+        from rsactftool.lib.keys_wrapper import PublicKey
 
         key_data = """-----BEGIN PUBLIC KEY-----
 MIGtMA0GCSqGSIb3DQEBAQUAA4GbADCBlwKBjw+vePt+ocGhwLTa5ONmKUvyhdAX

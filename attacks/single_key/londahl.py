@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from attacks.abstract_attack import AbstractAttack
+from rsactftool.attacks.abstract_attack import AbstractAttack
 from tqdm import tqdm
-from lib.number_theory import isqrt, invmod, trivial_factorization_with_n_phi
-from lib.keys_wrapper import PrivateKey
+from rsactftool.lib.number_theory import isqrt, invmod, trivial_factorization_with_n_phi
+from rsactftool.lib.keys_wrapper import PrivateKey
 from gmpy2 import powmod
 
 
@@ -67,7 +67,7 @@ class Attack(AbstractAttack):
         return None, None
 
     def test(self):
-        from lib.keys_wrapper import PublicKey
+        from rsactftool.lib.keys_wrapper import PublicKey
 
         key_data = """-----BEGIN PUBLIC KEY-----
 MIGeMA0GCSqGSIb3DQEBAQUAA4GMADCBiAKBgAOBxiQviVpL4G5d0TmVmjDn51zu

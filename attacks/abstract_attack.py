@@ -4,7 +4,7 @@
 import logging
 from pathlib import Path
 import sys
-from lib.utils import timeout
+from rsactftool.lib.utils import timeout
 import shutil
 
 

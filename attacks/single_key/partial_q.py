@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 
-from lib.number_theory import invmod
-from attacks.abstract_attack import AbstractAttack
+from rsactftool.lib.number_theory import invmod
+from rsactftool.attacks.abstract_attack import AbstractAttack
 from tqdm import tqdm
-from lib.keys_wrapper import PrivateKey
-from lib.number_theory import gcd
-from lib.exceptions import FactorizationError
+from rsactftool.lib.keys_wrapper import PrivateKey
+from rsactftool.lib.number_theory import gcd
+from rsactftool.lib.exceptions import FactorizationError
 
 # Source:
 # https://0day.work/0ctf-2016-quals-writeups/
