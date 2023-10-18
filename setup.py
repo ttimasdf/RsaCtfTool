@@ -6,8 +6,11 @@ BASE_CVS_URL = "https://github.com/RsaCtfTool/RsaCtfTool"
 setup(
     name="RsaCtfTool",
     packages=[
-        "RsaCtfTool",
+        "rsactftool",
+        "rsactftool.attacks",
+        "rsactftool.lib",
     ],
+    package_dir={"rsactftool": "."},
     version=VERSION,
     author="Ganapati",
     author_email="something",
@@ -15,7 +18,9 @@ setup(
     url=BASE_CVS_URL,
     download_url="{}/tarball/{}".format(BASE_CVS_URL, VERSION),
     keywords=[],
-    scripts=["RsaCtfTool.py"],
+    entry_points = {
+        'console_scripts': ['rsactftool=rsactftool.RsaCtfTool:main'],
+    },
     include_package_data=True,
     classifiers=[
         "Development Status :: 1 - Planning",
